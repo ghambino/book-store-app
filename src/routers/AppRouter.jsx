@@ -23,12 +23,9 @@ const AppRouter = () => {
                             <Route component={EditBook} path='/edit/:id' exact={true} />
                             <Route component={() => <Redirect to='/'/>} />
 
-                            
+    
                         </Switch>
                     </BooksContext.Provider>
-
-
-
                 </div>
             </div>
         </Router>

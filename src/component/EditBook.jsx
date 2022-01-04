@@ -8,7 +8,7 @@ const EditBook = () => {
     const history = useHistory()
     const {id} = useParams()
 
-    const bookToEdit = books.find(book => book.id === id)
+    const bookToEdit = books.find(book => book.id === id);
 
     const handleOnSubmit = (book) => {
         const filteredBooks = books.filter((book) => book.id !== id)
